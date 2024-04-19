@@ -30,5 +30,4 @@ public class Question2
   public static double calculateBMI(double height, double weight) {
     return weight / (height * height);
   }
-  }
 }
