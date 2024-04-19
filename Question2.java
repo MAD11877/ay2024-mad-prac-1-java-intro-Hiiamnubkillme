@@ -11,23 +11,15 @@ public class Question2
      */
      
     Scanner in = new Scanner(System.in);
+      double height = in.nextDouble();
+      double weight = in.nextDouble();
 
-    System.out.print("Enter your height in meters: ");
-    double height = in.nextDouble();
+      double bmi = calculateBMI(height, weight);
+      System.out.println(bmi);
+      in.close();
+    }
 
-    System.out.print("Enter your weight in kilograms: ");
-    double weight = in.nextDouble();
-
-    double bmi = calculateBMI(height, weight);
-
-    // Print out the BMI
-    System.out.println("Your BMI is: " + bmi);
-
-    // Close the scanner
-    in.close();
-  }
-
-  public static double calculateBMI(double height, double weight) {
-    return weight / (height * height);
+    public static double calculateBMI(double height, double weight) {
+      return weight / (height * height);
   }
 }

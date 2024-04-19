@@ -27,16 +27,16 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.print("Enter the number of integers: ");
+    System.out.print("");
     int count = in.nextInt();
     int[] numbers = new int[count];
     for (int i = 0; i < count; i++) {
-      System.out.print("Enter integer " + (i + 1) + ": ");
+      System.out.print("");
       numbers[i] = in.nextInt();
       }
     in.close();
     int mode = findMode(numbers);
-    System.out.println("Mode: " + mode);
+    System.out.println(mode);
   }
 
   public static int findMode(int[] numbers) 
